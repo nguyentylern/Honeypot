@@ -2,13 +2,19 @@
 
 html {
     font-family: "Inter", sans-serif;
+    margin: 0 0 0 0;
 }
+
+::-webkit-scrollbar {width: 0.5vw;}
+::-webkit-scrollbar-track {background: white;}
+::-webkit-scrollbar-thumb {background: gray;}
+::-webkit-scrollbar-thumb:hover {background: black;}
 
 nav {
     display: grid;
-    height: calc(auto - 1%);
+    height: 4vh;
     width: 98%;
-    padding: 1% 1% 1%;
+    padding: 1% 1% 1.6%;
     grid-template-columns: 3fr 1fr 1fr 3fr;
 }
 
@@ -48,11 +54,33 @@ nav > .logo > a > img {
 .logo-link-text {
     color: black;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     padding-left: 1.6rem;
     font-weight: 600;
 }
 
 .logo-link-text:hover, .guide-link:hover, .privacy-link:hover, .about-link:hover {
     font-weight: bolder;
+}
+
+.main {
+    width: 100%;
+}
+
+.landing {
+    width: 100%;
+    height: 89vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.landing > div > h1 {
+    font-size: 4.5rem;
+    padding-top: 5%;
+}
+
+.landing > div > h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
 }
