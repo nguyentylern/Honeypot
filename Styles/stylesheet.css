@@ -69,7 +69,7 @@ nav > .logo > a > img {
 
 .landing {
     width: 100%;
-    height: 89vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -83,4 +83,80 @@ nav > .logo > a > img {
 .landing > div > h4 {
     font-size: 1.5rem;
     font-weight: 500;
+}
+
+.matter {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.matter > img {
+    box-shadow: 0 0 20px #999;
+    border-radius: 18px;
+    width: 100%;
+}
+
+.matter > .caption {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.matter-content {
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.matter-content > h2 {
+    font-size: 2.3rem;
+    text-align: center;
+    padding-top: 36px;
+}
+
+.matter-content > p {
+    font-size: 1.3rem;
+    line-height: 120%;
+    text-align: justify;
+}
+
+.how {
+    width: 56%;
+    padding-left: 22%;
+    padding-right: 22%;
+}
+
+.how > h2 {
+    font-size: 2.3rem;
+    text-align: center;
+    padding-top: 36px;
+}
+
+.how > p {
+    font-size: 1.3rem;
+    line-height: 120%;
+    text-align: justify;
+}
+
+.who {
+    width: 56%;
+    padding-left: 22%;
+    padding-right: 22%;
+}
+
+.who > img {
+    border-radius: 18px;
+    width: 100%;
+}
+
+.who > h2 {
+    font-size: 2.3rem;
+    text-align: center;
+    padding-top: 36px;
+}
+
+.who > p {
+    font-size: 1.3rem;
+    line-height: 120%;
+    text-align: justify;
 }
