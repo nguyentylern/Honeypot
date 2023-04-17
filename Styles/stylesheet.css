@@ -103,9 +103,9 @@ nav > .logo > a > img {
 }
 
 .matter-content {
-    width: 70%;
-    padding-left: 15%;
-    padding-right: 15%;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .matter-content > h2 {
@@ -121,9 +121,9 @@ nav > .logo > a > img {
 }
 
 .how {
-    width: 56%;
-    padding-left: 22%;
-    padding-right: 22%;
+    width: 64%;
+    padding-left: 18%;
+    padding-right: 18%;
 }
 
 .how > h2 {
@@ -139,9 +139,9 @@ nav > .logo > a > img {
 }
 
 .who {
-    width: 56%;
-    padding-left: 22%;
-    padding-right: 22%;
+    width: 64%;
+    padding-left: 18%;
+    padding-right: 18%;
 }
 
 .who > img {
