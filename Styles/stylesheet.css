@@ -10,7 +10,7 @@ html {
 ::-webkit-scrollbar {width: 0.5vw;}
 ::-webkit-scrollbar-track {background: white;}
 ::-webkit-scrollbar-thumb {background: gray;}
-::-webkit-scrollbar-thumb:hover {background: black;}
+::-webkit-scrollbar-thumb:hover {background: darkgray;}
 
 nav {
     display: grid;
@@ -65,11 +65,11 @@ nav > .logo > a > img {
     font-weight: bolder;
 }
 
-/* Landing page stylings */
-
-.main {
+main {
     width: 100%;
 }
+
+/* Landing page stylings */
 
 .landing {
     width: 100%;
@@ -96,7 +96,7 @@ nav > .logo > a > img {
 }
 
 .matter > img {
-    box-shadow: 0 0 20px #999;
+    box-shadow: 0 0 20px #ddd;
     border-radius: 18px;
     width: 100%;
 }
@@ -113,15 +113,17 @@ nav > .logo > a > img {
 }
 
 .matter-content > h2 {
-    font-size: 2.3rem;
+    font-size: 2.8rem;
     text-align: center;
-    padding-top: 36px;
+    padding-top: 48px;
 }
 
 .matter-content > p {
-    font-size: 1.3rem;
-    line-height: 120%;
-    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 150%;
+    text-align: center;
+    position: relative;
+    top: -1.4rem;
 }
 
 .how {
@@ -131,15 +133,17 @@ nav > .logo > a > img {
 }
 
 .how > h2 {
-    font-size: 2.3rem;
+    font-size: 2.8rem;
     text-align: center;
-    padding-top: 36px;
+    padding-top: 48px;
 }
 
 .how > p {
-    font-size: 1.3rem;
-    line-height: 120%;
-    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 150%;
+    text-align: center;
+    position: relative;
+    top: -1.4rem;
 }
 
 .who {
@@ -154,13 +158,47 @@ nav > .logo > a > img {
 }
 
 .who > h2 {
-    font-size: 2.3rem;
+    font-size: 2.8rem;
     text-align: center;
-    padding-top: 36px;
+    padding-top: 48px;
 }
 
 .who > p {
-    font-size: 1.3rem;
-    line-height: 120%;
-    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 150%;
+    text-align: center;
+}
+
+/* Guide page stylings */
+
+main > aside > a {
+    display: block;
+}
+
+aside, article {
+    display: inline;
+}
+
+/* Footer stylings */
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+}
+
+footer > .footer-column-2 {
+    padding-left: 3rem;
+}
+
+footer > div > a {
+    display: block;
+    color: gray;
+    text-decoration: none;
+}
+
+footer > div > a:hover {
+    text-decoration: underline;
 }
