@@ -180,10 +180,53 @@ main {
     grid-template-columns: 1fr 4fr;
 }
 
+/* slightly less bad aside nav */
+
+.guide > aside > ul {
+    position: fixed;
+    top: 50%;
+    transform: translate(-25%, -50%);
+    list-style-type: none;
+}
+
+.guide > aside > ul > li > a {
+    text-decoration: none;
+    font-size: 110%;
+    color: black;
+    font-weight: 600;
+}
+
+.guide > aside > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+.guide > aside > ul > li > ul {
+    list-style-type: none;
+    padding-top: 12px;
+}
+
+.guide > aside > ul > li > ul > li {
+    padding-bottom: 12px;
+}
+
+.guide > aside > ul > li > ul > li > a {
+    text-decoration: none;
+    font-size: 110%;
+    color: black;
+    font-weight: 600;
+}
+
+.guide > aside > ul > li > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+/* worse aside nav */
+
 .guide > aside > div {
     position: fixed;
     top: 50%;
     transform: translate(0%, -50%);
+    display: none;
 }
 
 .guide > aside > div > a {
@@ -202,6 +245,8 @@ main {
 .guide > aside > div > .subsection {
     padding-left: 8px;
 }
+
+/* guide main article */
 
 .guide > article {
     padding-bottom: 8%;

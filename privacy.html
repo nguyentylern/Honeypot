@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="Styles/stylesheet.css">
         <link rel="icon" type="image/x-icon" href="Media/logo.png">
+        <script src="Scripts/form-script.js"></script>
     </head>
     <body>
         <nav>
@@ -25,6 +26,12 @@
                 <a href="about.html" class="about-link">About</a>
             </div>
         </nav>
+        <main>
+            <form name="myForm" action="/privacy.html" onsubmit="return validateForm()" method="post">
+                Name: <input type="text" name="fname">
+                <input type="submit" value="Submit">
+            </form>
+        </main>
         <footer>
             <div class="footer-column-1">
                 <a href="index.html">Honeypot</a>
