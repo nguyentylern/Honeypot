@@ -171,12 +171,71 @@ main {
 
 /* Guide page stylings */
 
-main > aside > a {
-    display: block;
+.guide {
+    display: grid;
+    width: 85%;
+    padding-top: 5%;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    grid-template-columns: 1fr 4fr;
 }
 
-aside, article {
-    display: inline;
+.guide > aside > div {
+    position: fixed;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.guide > aside > div > a {
+    display: block;
+    padding-bottom: 12px;
+    text-decoration: none;
+    font-size: 110%;
+    color: black;
+    font-weight: 600;
+}
+
+.guide > aside > div > a:hover {
+    text-decoration: underline;
+}
+
+.guide > aside > div > .subsection {
+    padding-left: 8px;
+}
+
+.guide > article {
+    padding-bottom: 8%;
+}
+
+.guide > article > h1 {
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.guide > article > h2 {
+    font-size: 2rem;
+}
+
+.guide > article > h3 {
+    font-size: 1.4rem;
+}
+
+.guide > article > p {
+    font-size: 1.2rem;
+}
+
+.guide > article > img {
+    box-shadow: 0 0 20px #ddd;
+    border-radius: 18px;
+    width: 100%;
+    height: auto;
+    margin-top: 5vh;
+}
+
+.guide > article > .caption {
+    color: #666;
+    font-size: 0.9rem;
+    padding-bottom: 5vh;
 }
 
 /* Footer stylings */
