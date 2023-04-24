@@ -173,19 +173,15 @@ main {
 
 .guide {
     display: grid;
-    width: 85%;
+    width: 100%;
     padding-top: 5%;
-    padding-left: 7.5%;
-    padding-right: 7.5%;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 4fr 10fr 1fr;
 }
 
 /* slightly less bad aside nav */
 
 .guide > aside > ul {
     position: fixed;
-    top: 50%;
-    transform: translate(-25%, -50%);
     list-style-type: none;
 }
 
