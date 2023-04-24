@@ -155,6 +155,8 @@ main {
 .who > img {
     border-radius: 18px;
     width: 100%;
+    position: relative;
+    top: -1.4rem;
 }
 
 .who > h2 {
