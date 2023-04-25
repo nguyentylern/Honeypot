@@ -281,6 +281,74 @@ main {
     padding-bottom: 5vh;
 }
 
+/* About page stylings */
+
+.about > .about-title {
+    text-align: center;
+}
+
+.about > .about-title > h1 {
+    font-size: 4.5rem;
+}
+
+.about h2 {
+    font-size: 2.8rem;
+}
+
+.about h4 {
+    font-size: 1.5rem;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.about > .cards {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 2%;
+}
+
+.about > .cards > .column {
+    width: 32%;
+}
+
+.about > .cards > .column > .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 8px;
+    height: 100%;
+}
+
+.about > .cards > .column > .card > .container {
+    text-align: left;
+    padding: 12px 0;
+}
+
+.about > .cards > .column > .card > .container > p{
+    padding-left: 0.2rem;
+}
+
+.about > .cards > .column > .card > .container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
 /* Footer stylings */
 
 footer {
