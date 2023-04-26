@@ -349,12 +349,12 @@ main {
 
 .about > .cards > .column > .card > .container > h3 {
     font-weight: 600;
-    padding-left: 0.6rem;
+    padding-left: 0.5rem;
     color: white;
 }
 
 .about > .cards > .column > .card > .container > p {
-    padding-left: 0.6rem;
+    padding-left: 0.5rem;
     color: white;
 }
 
