@@ -28,7 +28,7 @@
         </nav>
         <main>
             <article>
-                <h1>Your Online Privacy</h1>
+                <h1 id="title">Your Online Privacy</h1>
                 <p></p>
                 <ul></ul>
             </article>
@@ -38,13 +38,33 @@
                 Name: <input type="text" name="fname">
                 <input type="submit" value="Submit">
             </form>
+            <script>
+                function FizzBuzz(n) {
+                    const answer = [];
+                    for (let i = 1; i <= n; i++) {
+                        if (i % 3 == 0 && i % 5 == 0) {
+                            answer.push('FizzBuzz')
+                        }
+                        else if (i % 3 == 0) {
+                            answer.push('Fizz')
+                        }
+                        else if (i % 5 == 0) {
+                            answer.push('Buzz')
+                        }
+                        else {
+                            answer.push(i.toString())
+                        }
+                    }
+                    return answer
+                };
+                console.log(FizzBuzz(100))
+            </script>
+            <button type="button" onclick="FizzBuzz()">FizzBuzz</button>
         </main>
         <footer>
-            <div class="footer-column-1">
+            <div class="footer-links">
                 <a href="index.html">Honeypot</a>
                 <a href="guide.html">Guide</a>
-            </div>
-            <div class="footer-column-2">
                 <a href="privacy.html">Privacy</a>
                 <a href="about.html">About</a>
             </div>
