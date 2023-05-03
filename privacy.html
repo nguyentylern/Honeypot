@@ -8,7 +8,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="Styles/stylesheet.css">
         <link rel="icon" type="image/x-icon" href="Media/logo.png">
-        <script src="Scripts/form-script.js"></script>
     </head>
     <body>
         <nav>
@@ -27,39 +26,40 @@
             </div>
         </nav>
         <main>
-            <article>
+            <div>
                 <h1 id="title">Your Online Privacy</h1>
-                <p></p>
-                <ul></ul>
-            </article>
+                <h2 id="subtitle" class="subtitle">What Privacy Means on the Internet</h2>
+            </div>
             <img src="" alt="">
             <article></article>
-            <form name="myForm" action="privacy" onsubmit="return validateForm()" method="post">
-                Name: <input type="text" name="fname">
-                <input type="submit" value="Submit">
-            </form>
-            <script>
-                function FizzBuzz(n) {
-                    const answer = [];
-                    for (let i = 1; i <= n; i++) {
-                        if (i % 3 == 0 && i % 5 == 0) {
-                            answer.push('FizzBuzz')
-                        }
-                        else if (i % 3 == 0) {
-                            answer.push('Fizz')
-                        }
-                        else if (i % 5 == 0) {
-                            answer.push('Buzz')
-                        }
-                        else {
-                            answer.push(i.toString())
-                        }
-                    }
-                    return answer
-                };
-                console.log(FizzBuzz(100))
-            </script>
-            <button type="button" onclick="FizzBuzz()">FizzBuzz</button>
+            <div id="quiz">
+                <h2>Quiz</h2>
+                <h3>Test your knowledge now that you have read this page.</h3>
+                <form id="quiz-form">
+                    <div id="question-1">
+                        <h2>Question 1: What is the capital of France?</h2>
+                        <input type="radio" name="answer_options_1" value="a"><label class="option-label-1">a) Paris</label><br>
+                        <input type="radio" name="answer_options_1" value="b"><label>b) Rome</label><br>
+                        <input type="radio" name="answer_options_1" value="c"><label>c) Berlin</label><br>
+                    </div>
+                    <div id="question-2">
+                        <h2>Question 2: What is the tallest mountain in the world?</h2>
+                        <input type="radio" name="answer_options_2" value="a"><label>a) Mount Kilimanjaro</label><br>
+                        <input type="radio" name="answer_options_2" value="b"><label>b) Mount Everest</label><br>
+                        <input type="radio" name="answer_options_2" value="c"><label>c) Mount Fuji</label><br>
+                    </div>
+                    <div id="question-3">
+                        <h2>Question 3: Who is the author of the Harry Potter series?</h2>
+                        <input type="radio" name="answer_options_3" value="a"><label>a) J.K. Rowling</label><br>
+                        <input type="radio" name="answer_options_3" value="b"><label>b) Stephenie Meyer</label><br>
+                        <input type="radio" name="answer_options_3" value="c"><label>c) Suzanne Collins</label><br>
+                    </div>
+                    <button type="submit">Submit Quiz</button>
+                    <button type="button" id="reset-button">Reset Quiz</button>
+                </form>
+                <p id="result"></p>
+            </div>
+            <script src="Scripts/form-script.js"></script>
         </main>
         <footer>
             <div class="footer-links">
