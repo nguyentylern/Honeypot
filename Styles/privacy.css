@@ -45,11 +45,11 @@
 }
 
 #quiz > form h2 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
 }
 
 #quiz > form label {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 #quiz > form label::before {
@@ -61,6 +61,6 @@
     color: white;
     border: none;
     border-radius: 0.4rem;
-    margin-top: 1rem;
-    font-size: 1.2rem;
+    margin-top: 1.4rem;
+    font-size: 1.4rem;
 }
