@@ -1,0 +1,89 @@
+.about > .about-title {
+    text-align: center;
+}
+
+.about > .about-title > h1 {
+    font-size: 4.5rem;
+    padding-top: 3.5%;
+}
+
+.about h4 {
+    font-size: 1.5rem;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.about > .cards {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 2%;
+}
+
+.about > .cards > .column {
+    width: 32%;
+}
+
+.about > .cards > .column > .card {
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    aspect-ratio: 1 / 1;
+}
+
+.about > .cards > .column > .card#yuri {
+    background-color: #006aff;
+}
+
+.about > .cards > .column > .card#tyler {
+    background-color: #8000ff;
+}
+
+.about > .cards > .column > .card#nico {
+    background-color: #00b31e;
+}
+
+.about > .cards > .column > .card > .container {
+    text-align: left;
+    padding: 12px 12px;
+}
+
+.about > .cards > .column > .card > .container > h2 {
+    text-align: left;
+    font-size: 2.4rem;
+    line-height: 20%;
+    color: white;
+    padding-left: 0.4rem;
+}
+
+.about > .cards > .column > .card > .container > h3 {
+    font-weight: 600;
+    padding-left: 0.5rem;
+    color: white;
+}
+
+.about > .cards > .column > .card > .container > p {
+    padding-left: 0.5rem;
+    color: white;
+}
+
+.about > .about-content {
+    width: 60%;
+    padding: 7% 20% 0;
+}
+
+.about > .about-content > h2 {
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.about > .about-content > p {
+    font-size: 1.6rem;
+    text-align: center;
+}

@@ -1,0 +1,62 @@
+.privacy {
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+}
+
+.privacy > img {
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    border-radius: 18px;
+}
+
+.privacy h1 {
+    font-size: 3.1rem;
+    margin-top: 0;
+}
+
+.privacy h2 {
+    font-size: 2.4rem;
+}
+
+.privacy h3 {
+    font-size: 2rem;
+}
+
+.privacy p {
+    font-size: 1.4rem;
+}
+
+.privacy ul > li {
+    font-size: 1.4rem;
+}
+
+#privacy-1 {
+    padding-bottom: 2rem;
+}
+
+#quiz {
+    padding-top: 2rem;
+}
+
+#quiz > form h2 {
+    font-size: 1.6rem;
+}
+
+#quiz > form label {
+    font-size: 1.2rem;
+}
+
+#quiz > form label::before {
+    content: " ";
+}
+
+#quiz > form > button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 0.4rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}

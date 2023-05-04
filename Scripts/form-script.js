@@ -15,10 +15,10 @@ quiz_form.addEventListener('submit', function(event) {
     if (responses.response_1 === 'a') {
         correct_responses++;
     }
-    if (responses.response_2 === 'b') {
+    if (responses.response_2 === 'a') {
         correct_responses++;
     }
-    if (responses.response_3 === 'a') {
+    if (responses.response_3 === 'c') {
         correct_responses++;
     }
 
