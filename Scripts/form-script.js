@@ -11,23 +11,29 @@ quiz_form.addEventListener('submit', function(event) {
         response_3: document.querySelector('input[name="answer_options_3"]:checked').value
     };
 
+    const answers = {
+        answer_1: 'a',
+        answer_2: 'a',
+        answer_3: 'c'
+    }
+
     let correct_responses = 0;
-    if (responses.response_1 === 'a') {
+    if (responses.response_1 === answers.answer_1) {
         correct_responses++;
     }
-    if (responses.response_2 === 'a') {
+    if (responses.response_2 === answers.answer_2) {
         correct_responses++;
     }
-    if (responses.response_3 === 'c') {
+    if (responses.response_3 === answers.answer_3) {
         correct_responses++;
     }
 
-    const num_of_questions = 3;
+    const num_of_questions = Object.keys(responses).length;
     const percentage = (correct_responses / num_of_questions) * 100;
     const percentage_round = Math.floor(percentage);
     const missed = num_of_questions - correct_responses;
 
-    result_display.textContent = `You got ${percentage_round}% correct (${correct_responses}/3).`;
+    result_display.textContent = `You got ${percentage_round}% correct (${correct_responses}/${num_of_questions}).`;
 
     if (missed == 1) {
         result_display.innerHTML += ` You missed ${missed} question.`;
