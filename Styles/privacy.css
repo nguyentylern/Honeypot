@@ -60,7 +60,8 @@
     background-color: black;
     color: white;
     border: none;
-    border-radius: 0.4rem;
+    border-radius: 0.8rem;
     margin-top: 1.4rem;
     font-size: 1.4rem;
+    padding: 0.4rem 0.8rem;
 }
