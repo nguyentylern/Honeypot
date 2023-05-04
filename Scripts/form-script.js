@@ -33,7 +33,7 @@ quiz_form.addEventListener('submit', function(event) {
         result_display.innerHTML += ` You missed ${missed} question.`;
     } else if (missed != 0 && missed != 1) {
         result_display.innerHTML += ` You missed ${missed} questions.`;
-    } else {
+    } else if (missed == 0) {
         result_display.innerHTML += " You got no questions wrong!";
     }
 });
