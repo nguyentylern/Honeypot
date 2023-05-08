@@ -81,6 +81,25 @@ main {
     width: 100%;
 }
 
+/* Bibliography stylings */
+
+.bibliography {
+    width: 60%;
+    padding: 0 20%;
+}
+
+.bibliography > h2 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.bibliography > p {
+    text-align: left;
+    color: #444;
+    text-indent: -4rem;
+    padding-left: 4rem;
+}
+
 /* Footer stylings */
 
 footer {
