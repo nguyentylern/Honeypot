@@ -26,10 +26,28 @@
 
 .privacy p {
     font-size: 1.4rem;
+    line-height: 150%;
+    padding-bottom: 2rem;
 }
 
 .privacy ul > li {
     font-size: 1.4rem;
+}
+
+.privacy .caption {
+    color: #666;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.privacy .caption > a {
+    color: #111;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.privacy .caption > a:hover {
+    text-decoration: underline;
 }
 
 #privacy-1 {
