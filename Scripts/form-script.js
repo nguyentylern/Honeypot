@@ -5,7 +5,34 @@ const result_display = document.querySelector('#result');
 quiz_form.addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const responses = {
+    const responses = [
+        document.querySelector('input[name="answer_options_1"]:checked').value,
+        document.querySelector('input[name="answer_options_2"]:checked').value,
+        document.querySelector('input[name="answer_options_3"]:checked').value,
+        document.querySelector('input[name="answer_options_4"]:checked').value,
+        document.querySelector('input[name="answer_options_5"]:checked').value
+    ];
+
+    const answers = [
+        'a',
+        'a',
+        'c',
+        'd',
+        'b'
+    ]
+
+    let correct_responses = 0;
+    const num_of_questions = responses.length;
+
+    for (let i = 0; i < num_of_questions; i++) {
+        if (responses[i] === answers[i]) {
+            correct_responses++;
+        };
+    }
+
+    // Object Based Code
+
+    /*const responses = {
         response_1: document.querySelector('input[name="answer_options_1"]:checked').value,
         response_2: document.querySelector('input[name="answer_options_2"]:checked').value,
         response_3: document.querySelector('input[name="answer_options_3"]:checked').value,
@@ -37,8 +64,10 @@ quiz_form.addEventListener('submit', function(event) {
     if (responses.response_5 === answers.answer_5) {
         correct_responses++;
     }
+    */
 
-    const num_of_questions = Object.keys(responses).length;
+    // const num_of_questions = Object.keys(responses).length;
+
     const percentage = (correct_responses / num_of_questions) * 100;
     const percentage_round = Math.floor(percentage);
     const missed = num_of_questions - correct_responses;
@@ -47,7 +76,7 @@ quiz_form.addEventListener('submit', function(event) {
 
     if (missed == 1) {
         result_display.innerHTML += ` You missed ${missed} question.`;
-    } else if (missed != 0 && missed != 1) {
+    } else if (missed > 1) {
         result_display.innerHTML += ` You missed ${missed} questions.`;
     } else if (missed == 0) {
         result_display.innerHTML += " You got no questions wrong!";
