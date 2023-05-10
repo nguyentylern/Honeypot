@@ -10,15 +10,17 @@ quiz_form.addEventListener('submit', function(event) {
         document.querySelector('input[name="answer_options_2"]:checked').value,
         document.querySelector('input[name="answer_options_3"]:checked').value,
         document.querySelector('input[name="answer_options_4"]:checked').value,
-        document.querySelector('input[name="answer_options_5"]:checked').value
+        document.querySelector('input[name="answer_options_5"]:checked').value,
+        document.querySelector('input[name="answer_options_6"]:checked').value
     ];
 
     const answers = [
         'a',
         'a',
+        'b',
         'c',
-        'd',
-        'b'
+        'c',
+        'c'
     ]
 
     let correct_responses = 0;
