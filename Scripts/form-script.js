@@ -18,9 +18,9 @@ quiz_form.addEventListener('submit', function(event) {
         'a',
         'a',
         'b',
+        'b',
         'c',
-        'c',
-        'c'
+        'b'
     ]
 
     let correct_responses = 0;

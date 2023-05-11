@@ -50,6 +50,10 @@
     text-decoration: underline;
 }
 
+.privacy ul > li {
+    padding-bottom: 2rem;
+}
+
 #privacy-1 {
     padding-bottom: 1.4rem;
 }
