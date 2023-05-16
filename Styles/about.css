@@ -87,5 +87,7 @@
 
 .about > .about-content > p {
     font-size: 1.6rem;
-    text-align: center;
+    text-align: left;
+    text-indent: 4rem;
+    line-height: 150%;
 }
