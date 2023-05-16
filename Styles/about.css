@@ -46,31 +46,33 @@
 }
 
 .about > .cards > .column > .card#nico {
-    background-color: #00b31e;
+    background-color: #ff8b0f;
 }
 
 .about > .cards > .column > .card > .container {
+    width: 80%;
+    padding: 0 10% 10%;
     text-align: left;
-    padding: 12px 12px;
+    align-self: flex-end;
+    justify-content: flex-start;
+
 }
 
 .about > .cards > .column > .card > .container > h2 {
-    text-align: left;
     font-size: 2.4rem;
-    line-height: 20%;
     color: white;
-    padding-left: 0.4rem;
+    margin: 0 0 0.5rem;
 }
 
 .about > .cards > .column > .card > .container > h3 {
     font-weight: 600;
-    padding-left: 0.5rem;
     color: white;
+    margin: 0 0 0.5rem;
 }
 
 .about > .cards > .column > .card > .container > p {
-    padding-left: 0.5rem;
     color: white;
+    margin: 0;
 }
 
 .about > .about-content {

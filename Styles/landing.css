@@ -22,6 +22,7 @@
     width: 80%;
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 20px;
 }
 
 .matter-content {
@@ -119,6 +120,16 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .matter-content {
+        width: 100%;
+        padding: 0;
+    }
+
+    .how, .who {
+        width: 80%;
+        padding: 0 10%;
+    }
+
     .matter-context {
         display: block;
         width: 80%;
@@ -129,7 +140,6 @@
     .matter-context > .text {
         text-align: center;
         padding-bottom: 48px;
-        width: 80%;
-        padding: 0 10%;
+        width: 100%;
     }
 }

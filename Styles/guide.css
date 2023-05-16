@@ -80,24 +80,25 @@
 }
 
 .guide > article > h1 {
-    font-size: 3rem;
+    font-size: 3.1rem;
     margin-top: 0;
 }
 
 .guide > article > h2 {
-    font-size: 2rem;
+    font-size: 2.4rem;
 }
 
 .guide > article > h3 {
-    font-size: 1.4rem;
+    font-size: 2rem;
 }
 
 .guide > article > p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    line-height: 130%;
 }
 
 .guide > article > ul > li {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .guide > article > img {
@@ -105,11 +106,13 @@
     border-radius: 18px;
     width: 100%;
     height: auto;
-    margin-top: 5vh;
 }
 
 .guide > article > .caption {
     color: #666;
     font-size: 0.9rem;
+}
+
+.guide > article > .flowchart-description {
     padding-bottom: 5vh;
 }
