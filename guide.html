@@ -10,7 +10,7 @@
         <link rel="icon" type="image/x-icon" href="Media/logo.png">
     </head>
     <body>
-        <nav>
+        <nav class="wide-nav">
             <div class="logo">
                 <a href="index.html" class="logo-link-image"><img src="Media/logo.png" alt="Logo"></a>
                 <a href="index.html" class="logo-link-text">Honeypot</a>
@@ -23,6 +23,24 @@
             </div>
             <div class="about-nav">
                 <a href="about.html" class="about-link">About</a>
+            </div>
+        </nav>
+        <nav class="small-nav">
+            <script src="Scripts/dropdown.js"></script>
+            <div class="logo">
+                <a href="index.html" class="logo-link-image"><img src="Media/logo.png" alt="Logo"></a>
+            </div>
+            <div class="dropdown">
+                <button onclick="opendropdown()" class="dropdown-button"><img src="Media/dropdown-icon.svg" alt="Menu"></button>
+                <div class="dropdown-content">
+                    <div class="dropdown-links">
+                        <div>
+                            <a href="guide.html" class="guide-link">Guide</a>
+                            <a href="privacy.html" class="privacy-link">Privacy</a>
+                            <a href="about.html" class="about-link">About</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
         <main class="guide">
