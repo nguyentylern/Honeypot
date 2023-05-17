@@ -138,7 +138,7 @@ footer > .footer-links > a:hover {
     }
 }
 
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 700px) {
     .wide-nav {
         display: none;
     }
@@ -209,4 +209,4 @@ footer > .footer-links > a:hover {
         padding-bottom: 20px;
         font-size: 2rem;
     }
-}
+} */
