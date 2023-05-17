@@ -10,7 +10,7 @@
         <link rel="icon" type="image/x-icon" href="Media/logo.png">
     </head>
     <body>
-        <nav>
+        <nav class="wide-nav">
             <div class="logo">
                 <a href="index.html" class="logo-link-image"><img src="Media/logo.png" alt="Logo"></a>
                 <a href="index.html" class="logo-link-text">Honeypot</a>
@@ -23,6 +23,24 @@
             </div>
             <div class="about-nav">
                 <a href="about.html" class="about-link">About</a>
+            </div>
+        </nav>
+        <nav class="small-nav">
+            <script src="Scripts/dropdown.js"></script>
+            <div class="logo">
+                <a href="index.html" class="logo-link-image"><img src="Media/logo.png" alt="Logo"></a>
+            </div>
+            <div class="dropdown">
+                <button onclick="opendropdown()" class="dropdown-button"><img src="Media/dropdown-icon.svg" alt="Menu"></button>
+                <div class="dropdown-content">
+                    <div class="dropdown-links">
+                        <div>
+                            <a href="guide.html" class="guide-link">Guide</a>
+                            <a href="privacy.html" class="privacy-link">Privacy</a>
+                            <a href="about.html" class="about-link">About</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
         <main class="privacy">
@@ -66,6 +84,13 @@
                         <h2>Question 3: Is your data always secure when stored by an online service?</h2>
                         <input type="radio" name="answer_options_3" value="a"><label>Yes</label><br>
                         <input type="radio" name="answer_options_3" value="b"><label>No</label><br>
+                    </div>
+                    <div id="question-3">
+                        <h2>Question 4: What do websites use cookies for?</h2>
+                        <input type="radio" name="answer_options_4" value="a"><label>Payments</label><br>
+                        <input type="radio" name="answer_options_4" value="b"><label>Calculations</label><br>
+                        <input type="radio" name="answer_options_4" value="c"><label>User information</label><br>
+                        <input type="radio" name="answer_options_4" value="d"><label>Displaying content</label><br>
                     </div>
                     <button type="submit">Submit Quiz</button>
                     <button type="button" id="reset-button">Reset Quiz</button>

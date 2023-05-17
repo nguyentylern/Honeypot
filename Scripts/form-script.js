@@ -9,12 +9,14 @@ quiz_form.addEventListener('submit', function(event) {
         document.querySelector('input[name="answer_options_1"]:checked').value,
         document.querySelector('input[name="answer_options_2"]:checked').value,
         document.querySelector('input[name="answer_options_3"]:checked').value,
+        document.querySelector('input[name="answer_options_4"]:checked').value
     ];
 
     const answers = [
         'b',
         'a',
-        'b'
+        'b',
+        'c'
     ]
 
     let correct_responses = 0;
